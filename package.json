@@ -68,6 +68,11 @@
       "**/*.(t|j)s"
     ],
     "coverageDirectory": "../coverage",
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "src/ninjas/(.*)$": "<rootDir>/ninjas/$1",
+      "src/users/(.*)$": "<rootDir>/users/$1",
+      "src/belt/(.*)$": "<rootDir>/belt/$1"
+    }
   }
 }
