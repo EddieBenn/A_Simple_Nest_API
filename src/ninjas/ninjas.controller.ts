@@ -24,7 +24,7 @@ export class NinjasController {
 
   //GET /ninjas?weapon=stars --> []
   @Get()
-  getNinjas(@Query('weapon') weapon: 'stars' | 'nunchucks') {
+  getNinjas(@Query('weapon') weapon?: 'stars' | 'nunchucks') {
     return this.ninjasService.getNinjas(weapon);
   }
 
